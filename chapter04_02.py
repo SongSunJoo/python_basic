@@ -99,4 +99,11 @@ for num in numbers:
         print("아직 숫자를 찾지 못했어요 ", num)
         
 # continue
+lt = ["1", 2, 5, True, 4.3, complex(4)] # complete 복소수
 
+for v in lt:
+    if type(v) is bool:
+        continue
+    print("current type:", v, type(v))
+    print("multiply by 2", v * 3)
+    print(True * 3)
